@@ -1,15 +1,13 @@
 # 📚 RAG Solution for IBM Hackathon: Unlocking Knowledge with WatsonX.ai & Pinecone
 
 ## 🏆 Objective
-This project was developed for a global hackathon organized by IBM, aimed at promoting the adoption of **WatsonX.ai** and **WatsonX Assistant**. The solution addresses a common challenge within companies: providing employees with clear information on vacation policies and regulations. 
-
-The goal is to leverage a **Retrieval-Augmented Generation (RAG)** model to efficiently answer questions related to vacation rules using company documents. The solution uses **Pinecone** as a vector database, **WatsonX.ai** for the Large Language Model (LLM) using LLama, and **LangChain** as the orchestrator. 
+This project was developed for a global hackathon organized by IBM and LabLab.AI, aimed at promoting the adoption of **WatsonX.ai** and **Watson Assistant**. The solution tackles a widespread challenge faced by companies: delivering clear and accessible information about HR processes to employees.  The goal is to leverage a **Retrieval-Augmented Generation (RAG)** model to efficiently answer questions related to HR process using company documents. 
 
 ---
 
 ## 🛠️ Proposed Solution
 1. **Data Ingestion**: The solution starts by uploading company policy PDFs into Pinecone using Python. The PDFs are split into chunks, embedded using **WatsonX Embeddings**, and stored in the Pinecone vector database.
-2. **RAG API**: A Python API built with **Flask** and **Flask-RESTx** handles incoming queries, retrieves relevant documents from Pinecone, and uses WatsonX.ai's LLM to generate contextually accurate responses.
+2. **RAG API**: A Python API built with **Flask** and **Flask-RESTx** handles incoming queries, retrieves relevant documents from Pinecone, and uses **WatsonX.ai's LLM** to generate contextually accurate responses and  **LangChain** as the orchestrator.
 3. **Chatbot Interface**: The API integrates with **WatsonX Assistant**, which provides an interactive web interface for users to ask questions and receive answers in real time.
 
 ---
@@ -180,8 +178,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ## ✨ Acknowledgments
-Special thanks to IBM for organizing this hackathon and promoting the adoption of WatsonX.ai.
-
----
-
-Good luck with the hackathon, and may your solution stand out! 🚀
+Special thanks to IBM and for LabLab.AI for organizing this hackathon and promoting the adoption of WatsonX.ai.
