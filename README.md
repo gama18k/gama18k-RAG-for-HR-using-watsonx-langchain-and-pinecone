@@ -125,7 +125,7 @@ curl http://localhost:8000/swagger.json | jq . > openapi.json
     "response": "WatsonX.ai consists of three main components: data management, AI model training, and deployment."
   }
   ```
-
+ 
 ### Example Request
 Use `curl` to test the endpoint:
 ```bash
